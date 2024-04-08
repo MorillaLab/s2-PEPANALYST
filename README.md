@@ -21,11 +21,11 @@ The other part of this work consist of classifying the small peptides of differe
 
   1. A collection of n protein sequences from Arabidopsis, belonging to different gene peptide families (Data Mining).
 
-  2. Construct the geometric representation, in 768 dimensions for TAPE and more for ESM, of each protein sequence i to obtain a finite set of points X_i.
+  2. Construct the geometric representation, in 768 dimensions for TAPE and more for ESM, of each protein sequence i to obtain a finite set of points X<sub>i</sub>.
 
-  3. Compute the persistence diagrams of the sets X_i to obtain the sets of persistence diagrams of dimensions 0, 1, and 2, PD0(X<sub>i</sub>).
+  3. Compute the persistence diagrams of the sets X<sub>i</sub> to obtain the sets of persistence diagrams of dimensions 0, 1, and 2, PD0(X<sub>i</sub>).
 
-  4. Calculate the distance matrix of dimensions n x n, where the entry (i, j) is the Wasserstein distance W0 between the persistence diagrams of dimension 0, W0(PD0(X_i), PD0(X_j)).
+  4. Calculate the distance matrix of dimensions n x n, where the entry (i, j) is the Wasserstein distance W0 between the persistence diagrams of dimension 0, W0(PD0(X<sub>i</sub>), PD0(X<sub>j</sub>)).
 
   5. Construct the phylogenetic tree of the protein sequences from the distance matrix in Step 4, using the UPGMA algorithm.
 
