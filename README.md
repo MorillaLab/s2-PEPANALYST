@@ -11,7 +11,7 @@ This repository encompasses everything required for predicting small peptides in
 
 In this study, we utilize TAPE (i) and ESM (ii) embeddings. Each embedding is transformed into images of dimensions 28x28 and 32x32, respectively, upon which we apply Geotop accuracy assessment. Subsequently, we concatenate (i) and (ii) to enrich the information obtained. The resulting data is then converted into images before being inputted into a convolutional neural network (CNN) from LeNet. We opt for a CNN due to its effectiveness in computer vision tasks, leveraging concepts such as noise tolerance, distortion handling through sub-sampling, local receptive fields, and shared weights.
 
-The architecture of the CNN employed in ProtConv is utilised.
+The architecture of the CNN employed in ProtConv is utilised (https://github.com/swakkhar/ProtConv).
 
 The other aspect of our approach involves employing reinforcement learning techniques. This allows for the selection of the best embedding at each iteration, thereby enabling the creation of a highly effective predictive model.
 
