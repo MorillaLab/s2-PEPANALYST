@@ -17,9 +17,9 @@ The other aspect of our approach involves employing reinforcement learning techn
 
 ![workflow_s2pepanalyst](https://github.com/MorillaLab/s2-PEPANALYST/blob/main/sPEPANALYST.png)
 
-The other part of this work consist of classifying the small peptides of differents famillies. The methodology used here consist of:
+The other part of this work consist of classifying the small peptides of different famillies. The methodology used here consist of:
 
-  1. A collection of n protein sequences from Arabidopsis, belonging to different gene peptide families (Data Mining).
+  1. A collection of top *n* protein sequences from Arabidopsis, belonging to different gene peptide families (Data Mining).
 
   2. Construct the geometric representation, in 768 dimensions for TAPE and more for ESM, of each protein sequence i to obtain a finite set of points X<sub>i</sub>.
 
