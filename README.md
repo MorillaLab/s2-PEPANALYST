@@ -15,7 +15,7 @@ The architecture of the CNN employed in ProtConv is utilised (https://github.com
 
 The other aspect of our approach involves employing reinforcement learning techniques. This allows for the selection of the best embedding at each iteration, thereby enabling the creation of a highly effective predictive model.
 
-![workflow_s2pepanalyst](https://github.com/MorillaLab/s2-PEPANALYST/blob/main/sPEPANALYST.png)
+![workflow_s2pepanalyst](https://github.com/MorillaLab/s2-PEPANALYST/blob/main/s2PEPANALYST.png)
 
 The other part of this work consist of classifying the small peptides of different famillies. The methodology used here consist of:
 
