@@ -23,7 +23,7 @@ The other part of this work consist of classifying the small peptides of differe
 
   2. Construct the geometric representation, in 768 dimensions for TAPE and more for ESM, of each protein sequence i to obtain a finite set of points X<sub>i</sub>.
 
-  3. Compute the persistence diagrams of the sets X<sub>i</sub> to obtain the persistence diagrams for dimensions 0, 1, and 2, denoted as PD<sub>0,1,2</sub>(X<sub>i</sub>). This step also enables the prediction of a unique behavioural peptide that lacks a signal peptide region, as observed in the case of PEP1.
+  3. Compute the persistence diagrams of the sets X<sub>i</sub> to obtain the persistence diagrams for dimensions 0, 1, and 2, denoted as PD<sub>0,1,2</sub>(X<sub>i</sub>). This feature also facilitates the identification of behavioural peptides that lack a signal peptide region, such as PEP1, and potentially others.
 
   4. Calculate the distance matrix of dimensions n x n, where the entry (i, j) is the Wasserstein distance W<sub>0</sub> between the persistence diagrams of dimension 0, W<sub>0</sub>(PD<sub>0</sub>(X<sub>i</sub>), PD<sub>0</sub>(X<sub>j</sub>)). 
 
