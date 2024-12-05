@@ -23,9 +23,9 @@ The other part of this work consist of classifying the small peptides of differe
 
   2. Construct the geometric representation, in 768 dimensions for TAPE and more for ESM, of each protein sequence i to obtain a finite set of points X<sub>i</sub>.
 
-  3. Compute the persistence diagrams of the sets X<sub>i</sub> to obtain the sets of persistence diagrams of dimensions 0, 1, and 2, PD<sub>0</sub>(X<sub>i</sub>).
+  3. Compute the persistence diagrams of the sets X<sub>i</sub> to obtain the persistence diagrams for dimensions 0, 1, and 2, denoted as PD<sub>0</sub>(X<sub>i</sub>). This step also enables the prediction of a unique behavioural peptide that lacks a signal peptide region, as observed in the case of PEP1.
 
-  4. Calculate the distance matrix of dimensions n x n, where the entry (i, j) is the Wasserstein distance W<sub>0</sub> between the persistence diagrams of dimension 0, W<sub>0</sub>(PD<sub>0</sub>(X<sub>i</sub>), PD<sub>0</sub>(X<sub>j</sub>)).
+  4. Calculate the distance matrix of dimensions n x n, where the entry (i, j) is the Wasserstein distance W<sub>0</sub> between the persistence diagrams of dimension 0, W<sub>0</sub>(PD<sub>0</sub>(X<sub>i</sub>), PD<sub>0</sub>(X<sub>j</sub>)). 
 
   5. Thus, if such a distance in Step 4 is null for a given pair, this is akin to using BLAST but invariant to changes of scale. Scale invariance helps in detecting functional domains accurately, regardless of their length, leading to better functional annotation of proteins.
 
