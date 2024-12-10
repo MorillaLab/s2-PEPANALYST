@@ -17,9 +17,9 @@ The other aspect of our approach involves employing reinforcement learning techn
 
 ![workflow_s2pepanalyst](https://github.com/MorillaLab/s2-PEPANALYST/blob/main/s2PEPANALYST.png)
 
-The other part of this work consist of classifying the small peptides of different famillies. The methodology used here consist of:
+The other part of this work focuses on classifying small peptides from different signalling families. The methodology employed consists of:
 
-  1. A collection of top *n* protein sequences from Arabidopsis, belonging to different gene peptide families (Data Mining).
+  1. A comprehensive literature compilation covering all known signalling peptide families from _Arabidopsis thaliana_ (i.e., CEP, CRPs, SCOOPs, RALFs, etc.), along with newly identified signalling peptides, which were incorporated into these families through data mining in well-established databases, including NCBI.
 
   2. Construct the geometric representation, in 768 dimensions for TAPE and more for ESM, of each protein sequence i to obtain a finite set of points X<sub>i</sub>.
 
