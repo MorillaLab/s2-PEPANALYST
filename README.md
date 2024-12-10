@@ -27,5 +27,5 @@ The other part of this work focuses on classifying small peptides from different
 
   4. Calculate the distance matrix of dimensions n x n, where the entry (i, j) is the Wasserstein distance W<sub>0</sub> between the persistence diagrams of dimension 0, W<sub>0</sub>(PD<sub>0</sub>(X<sub>i</sub>), PD<sub>0</sub>(X<sub>j</sub>)). 
 
-  5. Thus, if such a distance in Step 4 is null for a given pair, this is akin to using BLAST but invariant to changes of scale. Scale invariance helps in detecting functional domains accurately, regardless of their length, leading to better functional annotation of proteins.
+  5. Thus, if such a distance in Step 4 is null for a given pair, this is akin to using BLAST but invariant to changes of scale. Scale invariance helps in detecting _functional_ domains accurately, regardless of their length, leading to better _functional_ annotation of proteins.
 
