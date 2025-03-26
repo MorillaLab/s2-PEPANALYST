@@ -19,14 +19,22 @@ The other aspect of our approach involves employing reinforcement learning techn
 # Family classification 
 #### Classifying small peptides from different `signalling families` 
 ```ruby
-  1. A comprehensive literature compilation covering all known signalling peptide families from _Arabidopsis thaliana_ (i.e., CEP, CRPs, SCOOPs, RALFs, etc.), along with newly identified signalling peptides, which were incorporated into these families through data mining in well-established databases, including NCBI.
+# 1. A comprehensive literature compilation covering all known signalling peptide families from Arabidopsis thaliana
+#    (i.e., CEP, CRPs, SCOOPs, RALFs, etc.), along with newly identified signalling peptides, which were incorporated
+#    into these families through data mining in well-established databases, including NCBI.
 
-  2. Construct the geometric representation, in 768 dimensions for TAPE and more for ESM, of each protein sequence i to obtain a finite set of points X<sub>i</sub>.
+# 2. Construct the geometric representation, in 768 dimensions for TAPE and more for ESM, of each protein sequence i
+#    to obtain a finite set of points X_i.
 
-  3. Compute the persistence diagrams of the sets X<sub>i</sub> to obtain the persistence diagrams for dimensions 0, 1, and 2, denoted as PD<sub>0,1,2</sub>(X<sub>i</sub>). This feature also facilitates the identification of behavioural peptides that lack a signal peptide region, such as PEP1, and potentially others.
+# 3. Compute the persistence diagrams of the sets X_i to obtain the persistence diagrams for dimensions 0, 1, and 2,
+#    denoted as PD_0,1,2(X_i). This feature also facilitates the identification of behavioural peptides that lack a
+#    signal peptide region, such as PEP1, and potentially others.
 
-  4. Calculate the distance matrix of dimensions n x n, where the entry (i, j) is the Wasserstein distance W<sub>0</sub> between the persistence diagrams of dimension 0, W<sub>0</sub>(PD<sub>0</sub>(X<sub>i</sub>), PD<sub>0</sub>(X<sub>j</sub>)). 
+# 4. Calculate the distance matrix of dimensions n x n, where the entry (i, j) is the Wasserstein distance W_0 between
+#    the persistence diagrams of dimension 0, W_0(PD_0(X_i), PD_0(X_j)).
 
-  5. Thus, if such a distance in Step 4 is null for a given pair, this is akin to using BLAST but invariant to changes of scale. Scale invariance helps in detecting _functional_ domains accurately, regardless of their length, leading to better _functional_ annotation of proteins.
-
+# 5. Thus, if such a distance in Step 4 is null for a given pair, this is akin to using BLAST but invariant to changes
+#    of scale. Scale invariance helps in detecting functional domains accurately, regardless of their length, leading
+#    to better functional annotation of proteins.
 ```
+
