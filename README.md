@@ -1,9 +1,5 @@
 # s<sup>2</sup>-PEPANALYST
-<p align="left">
-  <a href="https://choosealicense.com/licenses/gpl-3.0/">
-    <img src="https://img.shields.io/badge/License-GPLv3-green" alt="">
-  </a>
-</p>
+[![License](https://img.shields.io/badge/License-GPLv3-green)](https://Gchoosealicense.com/licenses/gpl-3.0/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 Small Signalling Peptide Analysis in Plant Systems
