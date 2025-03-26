@@ -37,4 +37,17 @@ The other aspect of our approach involves employing reinforcement learning techn
 #    of scale. Scale invariance helps in detecting functional domains accurately, regardless of their length, leading
 #    to better functional annotation of proteins.
 ```
+> ## Classification of Small Peptides from Different Signalling Families
+>
+> The methodology employed consists of:
+>
+> 1. **Comprehensive Literature Compilation**: A thorough collection of existing literature encompassing all known signalling peptide families from _Arabidopsis thaliana_ (e.g., CEP, CRPs, SCOOPs, RALFs), along with newly identified signalling peptides. These additions were integrated into these families through data mining in well-established databases, including NCBI.
+>
+> 2. **Geometric Representation Construction**: For each protein sequence _i_, construct its geometric representation in 768 dimensions for TAPE and higher dimensions for ESM, resulting in a finite set of points X<sub>i</sub>.
+>
+> 3. **Persistence Diagrams Computation**: Compute the persistence diagrams of the sets X<sub>i</sub> to obtain the persistence diagrams for dimensions 0, 1, and 2, denoted as PD<sub>0,1,2</sub>(X<sub>i</sub>). This process also facilitates the identification of behavioural peptides that lack a signal peptide region, such as PEP1, among others.
+>
+> 4. **Distance Matrix Calculation**: Calculate the distance matrix of dimensions _n_ x _n_, where the entry (_i_, _j_) represents the Wasserstein distance W<sub>0</sub> between the persistence diagrams of dimension 0: W<sub>0</sub>(PD<sub>0</sub>(X<sub>i</sub>), PD<sub>0</sub>(X<sub>j</sub>)).
+>
+> 5. **Functional Domain Detection**: If the distance calculated in Step 4 is zero for a given pair, this is analogous to using BLAST but invariant to changes in scale. Scale invariance aids in accurately detecting _functional_ domains regardless of their length, leading to improved _functional_ annotation of proteins.
 
