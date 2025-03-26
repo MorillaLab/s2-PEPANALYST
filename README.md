@@ -1,5 +1,7 @@
 # s<sup>2</sup>-PEPANALYST
 [![License](https://img.shields.io/badge/License-GPLv3-green)](https://Gchoosealicense.com/licenses/gpl-3.0/)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/MorillaLab/TopoTransformers/)
+[![Doi](https://img.shields.io/badge/Doi-10.1101-blue)](https://www.biorxiv.org/content/10.1101/2024.08.02.606319v1.abstract)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 Small Signalling Peptide Analysis in Plant Systems
