@@ -17,26 +17,6 @@ The other aspect of our approach involves employing reinforcement learning techn
 ![workflow_s2pepanalyst](https://github.com/MorillaLab/s2-PEPANALYST/blob/main/s2PEPANALYST.png)
 
 # Family classification 
-#### Classifying small peptides from different `signalling families` 
-```ruby
-# 1. A comprehensive literature compilation covering all known signalling peptide families from Arabidopsis thaliana
-#    (i.e., CEP, CRPs, SCOOPs, RALFs, etc.), along with newly identified signalling peptides, which were incorporated
-#    into these families through data mining in well-established databases, including NCBI.
-
-# 2. Construct the geometric representation, in 768 dimensions for TAPE and more for ESM, of each protein sequence i
-#    to obtain a finite set of points X_i.
-
-# 3. Compute the persistence diagrams of the sets X_i to obtain the persistence diagrams for dimensions 0, 1, and 2,
-#    denoted as PD_0,1,2(X_i). This feature also facilitates the identification of behavioural peptides that lack a
-#    signal peptide region, such as PEP1, and potentially others.
-
-# 4. Calculate the distance matrix of dimensions n x n, where the entry (i, j) is the Wasserstein distance W_0 between
-#    the persistence diagrams of dimension 0, W_0(PD_0(X_i), PD_0(X_j)).
-
-# 5. Thus, if such a distance in Step 4 is null for a given pair, this is akin to using BLAST but invariant to changes
-#    of scale. Scale invariance helps in detecting functional domains accurately, regardless of their length, leading
-#    to better functional annotation of proteins.
-```
 > ## Classification of Small Peptides from Different Signalling Families
 >
 > The methodology employed consists of:
