@@ -17,7 +17,7 @@ The architecture of the CNN employed in ProtConv is utilised and largely improve
 
 ![workflow_s2pepanalyst](https://github.com/MorillaLab/s2-PEPANALYST/blob/main/s2PEPANALYST.png)
 
-# Family classification 
+# Functional classification 
 > ## Classification of Small Peptides from Different Signalling Families
 >
 > The methodology employed consists of:
