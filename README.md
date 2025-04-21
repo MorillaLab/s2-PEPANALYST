@@ -17,7 +17,7 @@ In this study, we utilize TAPE (i) and ESM (ii) embeddings. Each embedding is tr
 The architecture of the CNN employed in ProtConv is utilised and largely improved (https://github.com/swakkhar/ProtConv).
 
 <!-- HTML for image resizing -->
-<img src="https://github.com/MorillaLab/s2-PEPANALYST/blob/main/FigS4.png?raw=true" alt="workflow_s2pepanalyst" width="25%"/>
+<img src="https://github.com/MorillaLab/s2-PEPANALYST/blob/main/FigS4.png?raw=true" alt="workflow_s2pepanalyst" width="35%"/>
 
 
 # Functional classification 
