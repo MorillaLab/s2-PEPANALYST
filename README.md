@@ -16,7 +16,7 @@ In this study, we utilize TAPE (i) and ESM (ii) embeddings. Each embedding is tr
 
 The architecture of the CNN employed in ProtConv is utilised and largely improved (https://github.com/swakkhar/ProtConv).
 
-![workflow_s2pepanalyst](https://github.com/MorillaLab/s2-PEPANALYST/blob/main/s2PEPANALYST.png)
+![workflow_s2pepanalyst](https://github.com/MorillaLab/s2-PEPANALYST/blob/main/FigS4.png)
 
 # Functional classification 
 > ## Classification of Small Peptides from Different Signalling Families
