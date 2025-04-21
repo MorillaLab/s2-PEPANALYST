@@ -19,7 +19,7 @@ The architecture of the CNN employed in ProtConv is utilised and largely improve
 ![workflow_s2pepanalyst](https://github.com/MorillaLab/s2-PEPANALYST/blob/main/FigS4.png)
 
 <!-- HTML for image resizing -->
-<img src="https://github.com/MorillaLab/s2-PEPANALYST/blob/main/FigS4.png?raw=true" alt="workflow_s2pepanalyst" width="70%"/>
+<img src="https://github.com/MorillaLab/s2-PEPANALYST/blob/main/FigS4.png?raw=true" alt="workflow_s2pepanalyst" width="50%"/>
 
 
 # Functional classification 
