@@ -18,6 +18,9 @@ The architecture of the CNN employed in ProtConv is utilised and largely improve
 
 ![workflow_s2pepanalyst](https://github.com/MorillaLab/s2-PEPANALYST/blob/main/FigS4.png)
 
+<!-- HTML for image resizing -->
+<img src="github.com/MorillaLab/s2-PEPANALYST/blob/main/FigS4.png" alt="S2-pepanalyst" width="50%">
+
 # Functional classification 
 > ## Classification of Small Peptides from Different Signalling Families
 >
