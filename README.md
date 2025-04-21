@@ -16,8 +16,6 @@ In this study, we utilize TAPE (i) and ESM (ii) embeddings. Each embedding is tr
 
 The architecture of the CNN employed in ProtConv is utilised and largely improved (https://github.com/swakkhar/ProtConv).
 
-# ![workflow_s2pepanalyst](https://github.com/MorillaLab/s2-PEPANALYST/blob/main/FigS4.png)
-
 <!-- HTML for image resizing -->
 <img src="https://github.com/MorillaLab/s2-PEPANALYST/blob/main/FigS4.png?raw=true" alt="workflow_s2pepanalyst" width="50%"/>
 
