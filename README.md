@@ -6,7 +6,7 @@
 
 Small Signalling Peptide Analysis in Plant Systems
 
-[Vomo-Donfack et al.  **S<sup>2</sup>-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides**. 2024. *BioRxiv*.](
+[Vomo-Donfack et al.  **S<sup>2</sup>-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides**. 2024. BioRxiv.](
 https://www.biorxiv.org/content/10.1101/2024.08.02.606319v2.abstract) 👁️
 
 
