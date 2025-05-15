@@ -37,3 +37,24 @@ The architecture of the CNN employed in ProtConv is utilised and largely improve
 >
 > 5. **Functional Domain Detection**: If the distance calculated in Step 4 is zero for a given pair, this is analogous to using BLAST but invariant to changes in scale. Scale invariance aids in accurately detecting _functional_ domains regardless of their length, leading to improved _functional_ annotation of proteins.
 
+<!-- ============================================== -->
+<div align="left">
+  <h1 id="citation">🎈 Citation</h1>
+  <hr style="height: 3px; background: linear-gradient(90deg, #EF8E8D, #5755A3); border: none; border-radius: 3px;">
+</div>
+
+If you find Absolute Zero Reasoner helpful, please cite us.
+
+```bibtex
+@article{Vomo-Donfack2024.08.02.606319,
+      title={S2-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides}, 
+      author={Vomo-Donfack, Kelly L. and Abaach, Mariem and Luna, Ana M. and Ginot, Gr{\'e}gory and Doblas, Ver{\'o}nica G. and Morilla, Ian},
+      elocation-id = {2024.08.02.606319},
+      year={2025},
+      eprint={https://www.biorxiv.org/content/early/2025/05/06/2024.08.02.606319.full.pdf},
+      doi = {10.1101/2024.08.02.606319},
+	    publisher = {Cold Spring Harbor Laboratory},
+      url={https://www.biorxiv.org/content/early/2025/05/06/2024.08.02.606319},
+      journal = {bioRxiv}
+}
+```
