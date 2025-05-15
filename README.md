@@ -47,7 +47,7 @@ If you find S<sup>2</sup>-PepAnalyst helpful, please cite us.
 
 ```bibtex
 @article{Vomo-Donfack2024.08.02.606319,
-         title={S<sup>2</sup>-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides}, 
+         title={S2-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides}, 
          author={Vomo-Donfack, Kelly L. and Abaach, Mariem and Luna, Ana M. and Ginot, Grégory and Doblas,
          Verónica G. and Morilla, Ian},
          year={2025},
