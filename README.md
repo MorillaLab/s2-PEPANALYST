@@ -43,11 +43,11 @@ The architecture of the CNN employed in ProtConv is utilised and largely improve
   <hr style="height: 3px; background: linear-gradient(90deg, #EF8E8D, #5755A3); border: none; border-radius: 3px;">
 </div>
 
-If you find Absolute Zero Reasoner helpful, please cite us.
+If you find S<sup>2</sup>-PepAnalyst helpful, please cite us.
 
 ```bibtex
 @article{Vomo-Donfack2024.08.02.606319,
-      title={S2-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides}, 
+      title={S<sup>2</sup>-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides}, 
       author={Vomo-Donfack, Kelly L. and Abaach, Mariem and Luna, Ana M. and Ginot, Gr{\'e}gory and Doblas, Ver{\'o}nica G. and Morilla, Ian},
       elocation-id = {2024.08.02.606319},
       year={2025},
