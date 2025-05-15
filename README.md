@@ -53,7 +53,7 @@ If you find S<sup>2</sup>-PepAnalyst helpful, please cite us.
       year={2025},
       eprint={https://www.biorxiv.org/content/early/2025/05/06/2024.08.02.606319.full.pdf},
       doi = {10.1101/2024.08.02.606319},
-	    publisher = {Cold Spring Harbor Laboratory},
+      publisher = {Cold Spring Harbor Laboratory},
       url={https://www.biorxiv.org/content/early/2025/05/06/2024.08.02.606319},
       journal = {bioRxiv}
 }
