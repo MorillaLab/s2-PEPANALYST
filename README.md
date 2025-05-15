@@ -47,13 +47,13 @@ If you find S<sup>2</sup>-PepAnalyst helpful, please cite us.
 
 ```bibtex
 @article{Vomo-Donfack2024.08.02.606319,
-      title={S<sup>2</sup>-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides}, 
-      author={Vomo-Donfack, Kelly L. and Abaach, Mariem and Luna, Ana M. and Ginot, Grégory and Doblas, Verónica G. and Morilla, Ian},
-      year={2025},
-      eprint={https://www.biorxiv.org/content/early/2025/05/06/2024.08.02.606319.full.pdf},
-      doi = {10.1101/2024.08.02.606319},
-      publisher = {Cold Spring Harbor Laboratory},
-      url={https://www.biorxiv.org/content/early/2025/05/06/2024.08.02.606319},
-      journal = {bioRxiv}
+         title={S<sup>2</sup>-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides}, 
+         author={Vomo-Donfack, Kelly L. and Abaach, Mariem and Luna, Ana M. and Ginot, Grégory and Doblas, Verónica G. and Morilla, Ian},
+         year={2025},
+         eprint={https://www.biorxiv.org/content/early/2025/05/06/2024.08.02.606319.full.pdf},
+         doi = {10.1101/2024.08.02.606319},
+         publisher = {Cold Spring Harbor Laboratory},
+         url={https://www.biorxiv.org/content/early/2025/05/06/2024.08.02.606319},
+         journal = {bioRxiv}
 }
 ```
