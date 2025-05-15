@@ -37,6 +37,7 @@ The architecture of the CNN employed in ProtConv is utilised and largely improve
 >
 > 5. **Functional Domain Detection**: If the distance calculated in Step 4 is zero for a given pair, this is analogous to using BLAST but invariant to changes in scale. Scale invariance aids in accurately detecting _functional_ domains regardless of their length, leading to improved _functional_ annotation of proteins.
 
+
 <!-- ============================================== -->
 <div align="left">
   <h1 id="citation">🎈 Citation</h1>
