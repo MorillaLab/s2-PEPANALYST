@@ -130,7 +130,7 @@ If you use this work in your research, please cite:
   title = {Reinforcement Learning for Protein Signal Peptide Classification},
   author = {MLiMO},
   year = {2025},
-  url = {https://github.com/MorillaLab/s2-PEPANALYST/blob/main/code/reinforcement_learning}
+  url = {https://github.com/MorillaLab/s2-PEPANALYST/tree/main/code/reinforcement_learning}
 }
 ```
 
