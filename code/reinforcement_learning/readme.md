@@ -2,7 +2,7 @@
 
 ## 📖 Project Overview
 
-This project implements a **reinforcement learning (RL) framework** to intelligently select between two different deep learning classifiers for predicting signal peptides in protein sequences. The system combines sequence embeddings from both **TAPE (Task Assessing Protein Embeddings)** and **ESM (Evolutionary Scale Modeling)** with topological features extracted using **persistent homology**, creating a robust ensemble classification system.
+This project implements a **reinforcement learning (RL) framework** to intelligently select between two different deep learning classifiers for predicting signal peptides in protein sequences. The system combines sequence embeddings from both **TAPE (Task Assessing Protein Embeddings)** and **ESM (Evolutionary Scale Modeling)** with topological-morphological features extracted using **persistent homology** and **Lipschitz-Killing Curvatures** (GeoTop), creating a robust ensemble classification system.
 
 ## 🧬 Biological Context: Signalling Peptides
 
@@ -28,7 +28,7 @@ Signalling peptides are short peptide sequences that direct proteins to their ap
 
 #### Topological Data Analysis:
 - **Persistent homology** applied to embedding matrices reshaped as 2D images
-- Captures topo-morphological features (GeoTop) and shape characteristics of the protein representations
+- Captures topological features and shape characteristics of the protein representations
 - Combined with original embeddings to create enriched feature representations
 
 ### 2. **Classifier Models**
