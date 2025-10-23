@@ -4,9 +4,9 @@
 
 This project implements a **reinforcement learning (RL) framework** to intelligently select between two different deep learning classifiers for predicting signal peptides in protein sequences. The system combines sequence embeddings from both **TAPE (Task Assessing Protein Embeddings)** and **ESM (Evolutionary Scale Modeling)** with topological features extracted using **persistent homology**, creating a robust ensemble classification system.
 
-## 🧬 Biological Context: Signal Peptides
+## 🧬 Biological Context: Signalling Peptides
 
-Signal peptides are short peptide sequences that direct proteins to their appropriate cellular locations. Accurate identification of these peptides is crucial for understanding protein function and localization. Traditional machine learning approaches typically rely on single-model predictions, but this project explores whether we can improve performance by dynamically selecting the most appropriate classifier for each protein sequence.
+Signalling peptides are short peptide sequences that direct proteins to their appropriate cellular locations. Accurate identification of these peptides is crucial for understanding protein function and localization. Traditional machine learning approaches typically rely on single-model predictions, but this project explores whether we can improve performance by dynamically selecting the most appropriate classifier for each protein sequence.
 
 ## 🏗️ System Architecture
 
