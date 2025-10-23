@@ -1,4 +1,3 @@
-```markdown
 # Reinforcement Learning for Optimal Embedding Selection in Signal Peptide Prediction
 
 ## 📖 Overview
