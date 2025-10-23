@@ -28,7 +28,7 @@ Signalling peptides are short peptide sequences that direct proteins to their ap
 
 #### Topological Data Analysis:
 - **Persistent homology** applied to embedding matrices reshaped as 2D images
-- Captures topological and morphological features and shape characteristics of the protein representations
+- Captures topo-morphological features (GeoTop) and shape characteristics of the protein representations
 - Combined with original embeddings to create enriched feature representations
 
 ### 2. **Classifier Models**
