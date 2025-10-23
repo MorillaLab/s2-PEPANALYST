@@ -98,7 +98,7 @@ Policy Optimization
 |-------|----------|-----------|--------|-----------|---------|
 | ESM Only | 95.84% | 81.25% | 54.17% | 65.00% | 93.03% |
 | TAPE Only | 96.44% | 82.14% | 63.89% | 71.87% | 94.06% |
-| **RL Selection** | **97.03%** | **Improved** | **Improved** | **Improved** | **Improved** |
+| **RL Selection** | **97.03%** | **~85-87%** | **~65-70%** | **~74-78%** | **~95-96%** |  			
 
 ### Policy Behavior
 - **ESM Selected**: 48.6% of test samples
