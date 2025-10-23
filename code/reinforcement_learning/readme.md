@@ -2,7 +2,7 @@
 
 ## 📖 Overview
 
-This project implements a **Reinforcement Learning (RL) framework** that dynamically selects between protein language model embeddings (ESM vs TAPE) for signal peptide classification. The system learns to choose the most appropriate embedding for each protein sequence based on its physicochemical properties, achieving superior performance compared to using either embedding alone.
+This project implements a structure-aware **Reinforcement Learning (RL) framework** that dynamically selects between protein language model embeddings (ESM vs TAPE) for signal peptide classification. The system learns to choose the most appropriate embedding for each protein sequence based on its physicochemical properties, achieving superior performance compared to using either embedding alone.
 
 ## 🎯 Problem Statement
 
