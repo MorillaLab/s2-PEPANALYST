@@ -128,9 +128,9 @@ If you use this work in your research, please cite:
 ```bibtex
 @software{rl_protein_classification,
   title = {Reinforcement Learning for Protein Signal Peptide Classification},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/yourusername/code/reinforcement_learning}
+  author = {MLiMO},
+  year = {2025},
+  url = {https://github.com/MorillaLab/s2-PEPANALYST/blob/main/code/reinforcement_learning}
 }
 ```
 
