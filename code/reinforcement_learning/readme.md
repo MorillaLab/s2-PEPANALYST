@@ -119,7 +119,7 @@ giotto-tda (for topological data analysis)
 - Incorporate additional protein language models
 - Extend to multi-class protein localization problems
 - Develop attention mechanisms for interpretable decision-making
-- Apply to other bioinformatics tasks requiring ensemble methods
+- Apply to other computational tasks requiring ensemble methods
 
 ## 📚 Citation
 
