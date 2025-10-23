@@ -6,7 +6,7 @@ This project implements a structure-aware **Reinforcement Learning (RL) framewor
 
 ## 🎯 Problem Statement
 
-Signal peptide prediction is crucial for understanding protein secretion and localization. While modern protein language models like ESM and TAPE provide powerful embeddings, their performance varies across different protein types. This project addresses the challenge of **intelligently selecting the best embedding** for each protein sequence rather than relying on a single model.
+Small signalling peptides (SSPs) are a class of short, functional peptides that act as crucial mediators of intercellular communication in plants. While modern protein language models like ESM and TAPE provide powerful embeddings, their performance varies across different protein types. This project addresses the challenge of **intelligently selecting the best embedding** for each protein sequence rather than relying on a single model.
 
 ## 🏗️ Architecture
 
