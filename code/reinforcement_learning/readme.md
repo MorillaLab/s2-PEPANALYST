@@ -1,7 +1,3 @@
-Based on the two Jupyter notebooks you've provided, here's a comprehensive narrative for your GitHub README.md file:
-
----
-
 # Reinforcement Learning for Protein Signal Peptide Classification
 
 ## 📖 Project Overview
@@ -138,6 +134,3 @@ If you use this work in your research, please cite:
 }
 ```
 
----
-
-This README provides a comprehensive overview of your reinforcement learning project for protein classification. The narrative highlights the innovative combination of protein embeddings, topological data analysis, and reinforcement learning to create an intelligent ensemble system that dynamically selects the most appropriate classifier for each protein sequence.
