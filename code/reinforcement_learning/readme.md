@@ -6,7 +6,7 @@ This project implements a **reinforcement learning (RL) framework** to intellige
 
 ## 🧬 Biological Context: Signalling Peptides
 
-Signalling peptides are short peptide sequences that direct proteins to their appropriate cellular locations. Accurate identification of these peptides is crucial for understanding protein function and localization. Traditional machine learning approaches typically rely on single-model predictions, but this project explores whether we can improve performance by dynamically selecting the most appropriate classifier for each protein sequence.
+Signalling peptides are short functional peptide sequences that act as crucial mediators of intercellular communication in plants. Accurate identification of these peptides is crucial for understanding protein function and localisation. Traditional machine learning approaches typically rely on single-model predictions, but this project explores whether we can improve performance by dynamically selecting the most appropriate classifier for each protein sequence.
 
 ## 🏗️ System Architecture
 
