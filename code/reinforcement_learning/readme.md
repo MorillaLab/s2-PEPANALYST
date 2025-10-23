@@ -152,8 +152,8 @@ else:
 
 ```
 reinforcement_learning/
-├── rl_mango-v1.ipynb          # Original implementation
-├── rl_mango-v2.ipynb          # Enhanced version
+├── rl_mango.ipynb             # Original implementation
+├── rl_mango-v1.ipynb          # Enhanced version
 ├── utils/
 │   ├── feature_extraction.py
 │   ├── embedding_processing.py
@@ -200,9 +200,9 @@ If you use this code in your research, please cite:
 ```bibtex
 @software{rl_protein_embeddings,
   title = {Reinforcement Learning for Optimal Protein Embedding Selection},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/yourusername/reinforcement_learning}
+  author = {MLiMO},
+  year = {2025},
+  url = {https://github.com/MorillaLab/s2-PEPANALYST/tree/main/code/reinforcement_learning}
 }
 ```
 ---
