@@ -1,12 +1,16 @@
 # Reinforcement Learning Framework for Dynamic Classifier Selection
 
-This repository contains the implementation of a mixed machine learning model that combines **Convolutional Neural Networks (CNNs)** and **Reinforcement Learning (RL)** to dynamically classify small secreted peptides from plants such as *Arabidopsis thaliana*, tomato, avocado hass, and gwen.
+This repository contains the implementation of a mixed machine learning model that combines **Convolutional Neural Networks (CNNs)** and **Reinforcement Learning (RL)** to dynamically classify small signalling peptides from plants such as *Arabidopsis thaliana*, tomato, mango, avocado hass, and gwen.
 
 ## 📖 Overview
 
-The system leverages protein sequence embeddings from two pre-trained models — **ESM** and **TAPE** — and uses a reinforcement learning-based policy network to dynamically select the best-performing classifier for each input sample. This adaptive approach improves overall accuracy, generalization, and computational efficiency compared to static ensemble methods.
+The system leverages protein sequence embeddings from two pre-trained models — **ESM** and **TAPE** — and uses a reinforcement learning-based policy network to dynamically select the best-performing classifier for each input sample. This adaptive approach improves overall accuracy, generalisation, and computational efficiency compared to static ensemble methods.
 
-## 🎯 Key Features
+## 🎯 Problem Statement
+
+Small signalling peptides (SSPs) are a class of short, functional peptides that act as crucial mediators of intercellular communication in plants. While modern protein language models like ESM and TAPE provide powerful embeddings, their performance varies across different protein types. This project addresses the challenge of **intelligently selecting the best embedding** for each protein sequence rather than relying on a single model.
+
+## Key Features
 
 - **Dynamic Classifier Selection**: Uses an actor-critic RL framework to choose between ESM and TAPE classifiers per sample.
 - **Confidence Penalty**: Incorporated into CNN training to reduce overfitting.
