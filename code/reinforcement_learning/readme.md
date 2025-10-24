@@ -67,7 +67,7 @@ Input (ESM/TAPE matrix)
 The model demonstrates:
 - Improved accuracy and AUC over individual classifiers
 - Effective policy learning for classifier selection
-- Better generalization and reduced overfitting
+- Better generalisation and reduced overfitting
 
 ## 📁 Project Structure
 
