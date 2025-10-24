@@ -152,22 +152,8 @@ else:
 
 ```
 reinforcement_learning/
-├── rl_mango.ipynb             # Original implementation
-├── rl_mango-v1.ipynb          # Enhanced version
-├── utils/
-│   ├── feature_extraction.py
-│   ├── embedding_processing.py
-│   └── rl_framework.py
-├── models/
-│   ├── classifiers.py
-│   ├── policy_networks.py
-│   └── value_networks.py
-├── data/
-│   ├── embeddings/
-│   └── processed/
-└── results/
-    ├── training_history/
-    └── model_checkpoints/
+├── rl_mango.ipynb             # Enhanced version
+├── rl_mango-v1.ipynb          # Original implementation
 ```
 
 ## 🔬 Key Innovations
