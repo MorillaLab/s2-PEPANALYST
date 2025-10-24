@@ -1,152 +1,69 @@
-# Reinforcement Learning for Optimal Embedding Selection in Signal Peptide Prediction
+# Reinforcement Learning Framework for Dynamic Classifier Selection
+
+This repository contains the implementation of a mixed machine learning model that combines **Convolutional Neural Networks (CNNs)** and **Reinforcement Learning (RL)** to dynamically classify small secreted peptides from plants such as *Arabidopsis thaliana*, tomato, avocado hass, and gwen.
 
 ## 📖 Overview
 
-This project implements a structure-aware **Reinforcement Learning (RL) framework** that dynamically selects between protein language model embeddings (ESM vs TAPE) for signalling peptide classification. The system learns to choose the most appropriate embedding for each protein sequence based on its physicochemical properties, achieving superior performance compared to using either embedding alone.
+The system leverages protein sequence embeddings from two pre-trained models — **ESM** and **TAPE** — and uses a reinforcement learning-based policy network to dynamically select the best-performing classifier for each input sample. This adaptive approach improves overall accuracy, generalization, and computational efficiency compared to static ensemble methods.
 
-## 🎯 Problem Statement
+## 🎯 Key Features
 
-Small signalling peptides (SSPs) are a class of short, functional peptides that act as crucial mediators of intercellular communication in plants. While modern protein language models like ESM and TAPE provide powerful embeddings, their performance varies across different protein types. This project addresses the challenge of **intelligently selecting the best embedding** for each protein sequence rather than relying on a single model.
+- **Dynamic Classifier Selection**: Uses an actor-critic RL framework to choose between ESM and TAPE classifiers per sample.
+- **Confidence Penalty**: Incorporated into CNN training to reduce overfitting.
+- **Sample-Specific Optimization**: The policy network learns to route inputs to the most suitable classifier.
+- **Stable Training**: Value network reduces variance in policy updates via advantage estimation.
 
-## 🏗️ Architecture
+##  🏗️ Architecture
 
-### Core Components
-
-1. **Feature Extraction Engine**
-   - Extracts comprehensive protein features (hydrophobicity, charge, cysteine patterns, etc.)
-   - Combines sequence-based features with topological data from persistent homology
-
-2. **Dual-Classifier System**
-   - **ESM Classifier**: Processes ESM-2 embeddings with geometric topological features
-   - **TAPE Classifier**: Processes TAPE embeddings with topological analysis
-   - Both classifiers use CNN architectures with attention mechanisms
-
-3. **Reinforcement Learning Agent**
-   - **Policy Network**: Decides which classifier to use for each protein
-   - **Value Network**: Estimates expected future rewards
-   - **State Representation**: Protein physicochemical properties
-
-### RL Framework Details
+### 1. Classifier Networks
+Two independent CNNs are trained on ESM and TAPE embeddings:
 
 ```
-State (Protein Features) 
-    ↓
-Policy Network 
-    ↓
-Action Selection (ESM/TAPE)
-    ↓
-Classifier Execution
-    ↓
-Reward Calculation
-    ↓
-Policy Optimization
+Input (ESM/TAPE matrix)
+│
+├── Conv2D (8, 3×3) + ReLU
+├── AvgPool
+├── Conv2D (16, 3×3) + ReLU
+├── AvgPool
+├── Conv2D (32, 3×3) + ReLU
+├── AvgPool
+├── Flatten
+├── Dense (128) + ReLU
+├── Dense (64) + ReLU
+└── Dense (1) + Sigmoid
 ```
+
+### 2. Reinforcement Learning Component
+- **Policy Network (Actor)**: Decides which classifier to use.
+- **Value Network (Critic)**: Estimates expected reward to stabilize learning.
+- **Reward Function**: Balances accuracy and confidence, penalizing poor selections.
 
 ## 🧪 Methodology
 
-### 1. Feature Engineering
+1. **Input**: Protein sequences are embedded using ESM and TAPE.
+2. **State Representation**: Embeddings are fed into the policy network.
+3. **Action Selection**: Policy chooses ESM or TAPE classifier.
+4. **Reward Calculation**: Based on prediction correctness and confidence.
+5. **Policy Update**: Using advantage-based policy gradient.
 
-**Protein Properties Extracted:**
-- Amino acid composition frequencies
-- Hydrophobicity profiles (Kyte-Doolittle scale)
-- Molecular weight calculations
-- Secondary structure propensities
-- Cysteine patterns and density
-- Charge distribution
-- Aromaticity and aliphaticity indices
-- Sequence complexity metrics
-- Motif presence (dibasic sites, glycosylation sites)
+## Experimental Setup
 
-### 2. Embedding Processing
-
-**ESM Embeddings:**
-- ESM-2 model embeddings (1280 dimensions)
-- Combined with persistent homology features
-- Reshaped to 36×36 spatial representation
-
-**TAPE Embeddings:**
-- TAPE model embeddings
-- Geometric topological analysis
-- Reshaped to 28×28 spatial representation
-
-### 3. Reinforcement Learning Algorithm
-
-**Policy Gradient Approach:**
-- **State**: Normalized protein feature vectors
-- **Action**: Binary choice {ESM, TAPE}
-- **Reward**: Combination of classification accuracy and loss reduction
-- **Optimization**: Advantage Actor-Critic (A2C) style updates
-
-**Key RL Parameters:**
-```python
-{
-    'gamma': 0.99,           # Discount factor
-    'ent_coef': 0.02,        # Entropy coefficient
-    'policy_lr': 1e-4,       # Policy network learning rate
-    'value_lr': 1e-4,        # Value network learning rate
-    'clf_lr': 1e-4,          # Classifier learning rate
-    'n_pretrain_epochs': 50, # Classifier pretraining
-    'n_episodes': 200        # RL training episodes
-}
-```
+- **Datasets**: Plant peptide sequences from Arabidopsis, tomato, avocado.
+- **Training**:
+  - CNNs: 50 epochs, Adam optimizer, LR = 1e-4
+  - RL: 200 episodes, γ = 0.99, entropy coefficient = 0.02
+- **Evaluation Metrics**:
+  - Accuracy
+  - AUC
+  - Binary Cross-Entropy Loss
+  - Policy Decision Accuracy
 
 ## 📊 Results
 
-### Performance Comparison
-
-| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
-|-------|----------|-----------|--------|-----------|---------|
-| ESM Only | 95.84% | 81.25% | 54.17% | 65.00% | 93.03% |
-| TAPE Only | 96.44% | 82.14% | 63.89% | 71.87% | 94.06% |
-| **RL Selection** | **97.03%** | **~85-87%** | **~65-70%** | **~74-78%** | **~95-96%** |  			
-
-### Policy Behavior
-- **ESM Selected**: 48.6% of test samples
-- **TAPE Selected**: 51.4% of test samples
-- The learned policy effectively distributes samples based on protein characteristics
-
-## 🚀 Installation & Usage
-
-### Prerequisites
-```bash
-pip install tensorflow scikit-learn biopython matplotlib seaborn
-pip install gudhi  # For topological data analysis
-```
-
-### Data Preparation
-1. Place your FASTA files in `data/` directory
-2. Generate ESM and TAPE embeddings
-3. Run SignalP for ground truth labels
-
-### Training
-```python
-# Initialize the RL trainer
-trainer = EnhancedRLTrainer(
-    state_dim=states.shape[1],
-    tape_shape=(32, 32, 1),
-    esm_shape=(41, 41, 1),
-    config=training_config
-)
-
-# Pretrain classifiers
-trainer.pretrain_classifiers(train_data, val_data)
-
-# RL training
-for episode in range(n_episodes):
-    trainer.train_episode(states, tape_data, esm_data, labels)
-```
-
-### Inference
-```python
-# For a new protein sequence
-state = feature_extractor.extract_features(sequence)
-action, _ = policy_network.sample_action(state)
-
-if action == 0:
-    prediction = esm_classifier(esm_embedding)
-else:
-    prediction = tape_classifier(tape_embedding)
-```
+The model demonstrates:
+- Improved accuracy and AUC over individual classifiers
+- Effective policy learning for classifier selection
+- Better generalization and reduced overfitting
 
 ## 📁 Project Structure
 
@@ -178,6 +95,10 @@ We welcome contributions! Areas of particular interest:
 - Alternative RL algorithms
 - New embedding models
 - Performance optimizations
+  
+## License
+
+This project is for academic use. Please cite the authors if you use this code in your research.
 
 ## 📜 Citation
 
