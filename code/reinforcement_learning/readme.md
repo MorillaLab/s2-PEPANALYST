@@ -1,4 +1,4 @@
-# Reinforcement Learning Framework for Dynamic Classifier Selection
+# Reinforcement Learning Framework for Dynamic Classifier Selection of Protein in Plants
 
 This repository contains the implementation of a mixed machine learning model that combines **Convolutional Neural Networks (CNNs)** and **Reinforcement Learning (RL)** to dynamically classify small signalling peptides from plants such as *Arabidopsis thaliana*, tomato, mango, avocado hass, and gwen.
 
