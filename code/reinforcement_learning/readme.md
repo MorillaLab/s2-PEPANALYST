@@ -59,8 +59,8 @@ Input (ESM/TAPE matrix)
 - **Evaluation Metrics**:
   - Accuracy
   - AUC
-  - Binary Cross-Entropy Loss
-  - Policy Decision Accuracy
+  - F1-Score 
+  - MCC
 
 ## 📊 Results
 
