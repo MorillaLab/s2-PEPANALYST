@@ -60,11 +60,11 @@ Input (ESM/TAPE matrix)
   - Accuracy
   - AUC
   - BCE
- Policy:
+  Policy:
   - Policy decision accuracy
   - Combined system performance
 
-## Reward Function
+## 🤖 Reward Function
 
 The reward function is defined as:
 
