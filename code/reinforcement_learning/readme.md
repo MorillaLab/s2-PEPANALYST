@@ -75,9 +75,9 @@ The reward balances:
 
 Accuracy (through the correct prediction indicator)
 
-Confidence calibration or Plausability (through the absolute error terms)
+Plausability (through the absolute error terms)
 
-Quality or Loss minimization (through the negative loss term)
+Quality (through the negative loss term and Plausability)
 
 ## 📊 Results
 
