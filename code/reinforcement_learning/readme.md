@@ -70,7 +70,7 @@ The reward function is defined as:
 
 ```math
 R_t = -\mathcal{L}_{\text{chosen}} + \mathbb{I}[\text{correct}] - |y - \hat{p}_{\text{chosen}}| - |y - \hat{p}_{\text{other}}|
-
+```
 ## 📊 Results
 
 The model demonstrates:
