@@ -69,8 +69,16 @@ Input (ESM/TAPE matrix)
 The reward function is defined as:
 
 ```math
-R_t = -\mathcal{L}_{\text{chosen}} + \mathbb{I}[\text{correct}] - |y - \hat{p}_{\text{chosen}}| - |y - \hat{p}_{\text{other}}|
+R_t = -\mathcal{L}_{\text{chosen}} + \mathbb{I}[\text{correct}] - ||y - \hat{p}_{\text{chosen}}| - |y - \hat{p}_{\text{other}}||
 ```
+The reward balances:
+
+Accuracy (through the correct prediction indicator)
+
+Confidence calibration or Plausability (through the absolute error terms)
+
+Quality or Loss minimization (through the negative loss term)
+
 ## 📊 Results
 
 The model demonstrates:
