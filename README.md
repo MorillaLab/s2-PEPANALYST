@@ -18,7 +18,7 @@ The architecture of the CNN employed in ProtConv is utilised and largely improve
 
 <!-- HTML for image resizing -->
 <div align="center">
-  <img src="https://github.com/MorillaLab/s2-PEPANALYST/blob/main/s2-pepanalyst%20images/FigS1_gh.png?raw=true" alt="workflow_s2pepanalyst" width="35%"/>
+  <img src="https://github.com/MorillaLab/s2-PEPANALYST/blob/main/s2-pepanalyst%20images/FigS1.png?raw=true" alt="workflow_s2pepanalyst" width="35%"/>
 </div>
 
 
