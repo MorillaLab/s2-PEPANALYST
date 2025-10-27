@@ -91,8 +91,8 @@ The model demonstrates:
 
 ```
 reinforcement_learning/
-├── rl_mango.ipynb             # Enhanced version
-├── rl_mango-v1.ipynb          # Original implementation
+├── rl_mango-v1.ipynb           # Baseline implementation  
+├── rl_mango-v2.ipynb           # Enhanced final version
 ```
 
 ## 🔬 Key Innovations
