@@ -1,7 +1,7 @@
 # S<sup>2</sup>-PEPANALYST
 [![License](https://img.shields.io/badge/License-GPLv3-green)](https://Gchoosealicense.com/licenses/gpl-3.0/)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/MorillaLab/TopoTransformers/)
-[![Doi](https://img.shields.io/badge/Doi-10.1101-blue)](https://www.biorxiv.org/content/10.1101/2024.08.02.606319v1.abstract)
+[![Doi](https://img.shields.io/badge/Doi-10.1101-blue)](https://doi.org/10.1111/pbi.70536)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 Small Signalling Peptide Analysis in Plant Systems
@@ -51,7 +51,7 @@ If you find S<sup>2</sup>-PepAnalyst helpful, please cite us.
          author={Vomo-Donfack, Kelly L. and Abaach, Mariem and Luna, Ana M. and Ginot, Grégory and Doblas,
          Verónica G. and Morilla, Ian},
          year={2026},
-         doi = {10.1101/2024.08.02.606319},
+         doi = {10.1111/pbi.70536},
          publisher = {Wiley},
          url={https://doi.org/10.1111/pbi.70536},
          journal = {Plant Biotechnology Journal}
