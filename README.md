@@ -53,7 +53,7 @@ If you find S<sup>2</sup>-PepAnalyst helpful, please cite us.
          year={2026},
          doi = {10.1111/pbi.70536},
          publisher = {Wiley},
-         url={https://doi.org/10.1111/pbi.70536},
+         url={https://onlinelibrary.wiley.com/doi/10.1111/pbi.70536},
          journal = {Plant Biotechnology Journal}
 }
 ```
