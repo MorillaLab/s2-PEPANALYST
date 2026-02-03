@@ -7,7 +7,7 @@
 Small Signalling Peptide Analysis in Plant Systems
 
 [Vomo-Donfack et al.  **S<sup>2</sup>-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides**. 2024. BioRxiv.](
-https://www.biorxiv.org/content/10.1101/2024.08.02.606319v2.abstract) 👁️
+[https://doi.org/10.1111/pbi.70536]) 👁️
 
 
 This repository encompasses everything required for predicting small signalling peptides in tomato (i.e., peptide ligands in _Solanum lycopersicum_), avogado hass, avogado gwen and arabidpsis employing it as a plant-system model. The foundation of the model is derived from Tasnim _et al_., 2021, with added criteria including a size restriction of less than or equal to 200 amino acids. Furthermore, it incorporates the identification of an N-terminal signal peptide as a novel class (Teufel _et al_., 2022). The accuracy assessment of signalling function is performed using GeoTop (Abaach _et al_., 2023). Moreover, the implementation involves the utilisation of a bespoke reinforcement learning to dynamically control the selection of the most effective feature embedding for the prediction. 
@@ -50,11 +50,10 @@ If you find S<sup>2</sup>-PepAnalyst helpful, please cite us.
          title={S2-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides}, 
          author={Vomo-Donfack, Kelly L. and Abaach, Mariem and Luna, Ana M. and Ginot, Grégory and Doblas,
          Verónica G. and Morilla, Ian},
-         year={2025},
-         eprint={https://www.biorxiv.org/content/early/2025/05/06/2024.08.02.606319.full.pdf},
+         year={2026},
          doi = {10.1101/2024.08.02.606319},
-         publisher = {Cold Spring Harbor Laboratory},
-         url={https://www.biorxiv.org/content/early/2025/05/06/2024.08.02.606319},
-         journal = {bioRxiv}
+         publisher = {Wiley},
+         url={https://doi.org/10.1111/pbi.70536},
+         journal = {Plant Biotechnology Journal}
 }
 ```
