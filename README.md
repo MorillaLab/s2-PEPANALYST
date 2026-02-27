@@ -33,7 +33,7 @@ Small signalling peptides (SSPs) are short secreted proteins that act as ligands
 5. **Detecting functional domains** using Wasserstein distances between persistence diagrams — scale-invariant, analogous to BLAST but topology-aware
 
 <p align="center">
-  <img src="s2-pepanalyst images/FigS1.png" alt="S2-PEPANALYST workflow" width="820"/>
+  <img src="s2-pepanalyst images/Fig1_2.png" alt="S2-PEPANALYST workflow" width="820"/>
   <br/>
   <em>Full S2-PEPANALYST pipeline: from raw sequence to functional SSP classification.</em>
 </p>
