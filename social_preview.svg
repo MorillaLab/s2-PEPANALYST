@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#071a0e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d1f12;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#84cc16;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#84cc16;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="leafgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:#166534;stop-opacity:0.05"/>
+    </linearGradient>
+    <filter id="bigblur"><feGaussianBlur stdDeviation="28"/></filter>
+    <filter id="softblur"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- Ambient glow pools -->
+  <ellipse cx="200" cy="400" rx="380" ry="240" fill="#22c55e" opacity="0.06" filter="url(#bigblur)"/>
+  <ellipse cx="1080" cy="250" rx="300" ry="220" fill="#14b8a6" opacity="0.06" filter="url(#bigblur)"/>
+  <ellipse cx="700" cy="600" rx="200" ry="120" fill="#84cc16" opacity="0.04" filter="url(#bigblur)"/>
+
+  <!-- Decorative leaf silhouettes (right side) -->
+  <!-- Large leaf 1 -->
+  <path d="M 950 80 Q 1100 140 1080 320 Q 1060 420 950 440 Q 870 360 890 220 Q 900 140 950 80 Z"
+        fill="url(#leafgrad)" stroke="#22c55e" stroke-width="0.8" stroke-opacity="0.2"/>
+  <!-- Leaf midrib -->
+  <path d="M 950 90 Q 970 200 960 380" stroke="#22c55e" stroke-width="1" stroke-opacity="0.2"
+        fill="none" stroke-dasharray="4,4"/>
+  <!-- Leaf veins -->
+  <path d="M 960 180 Q 1010 200 1040 230" stroke="#22c55e" stroke-width="0.6" stroke-opacity="0.15" fill="none"/>
+  <path d="M 958 240 Q 1020 255 1055 290" stroke="#22c55e" stroke-width="0.6" stroke-opacity="0.15" fill="none"/>
+  <path d="M 955 300 Q 990 310 1010 335" stroke="#22c55e" stroke-width="0.6" stroke-opacity="0.15" fill="none"/>
+  <path d="M 960 180 Q 915 195 900 215" stroke="#22c55e" stroke-width="0.6" stroke-opacity="0.15" fill="none"/>
+  <path d="M 958 240 Q 920 252 908 268" stroke="#22c55e" stroke-width="0.6" stroke-opacity="0.15" fill="none"/>
+
+  <!-- Large leaf 2 (overlapping) -->
+  <path d="M 1120 150 Q 1250 220 1240 390 Q 1220 470 1120 490 Q 1040 400 1070 270 Q 1090 180 1120 150 Z"
+        fill="url(#leafgrad)" stroke="#84cc16" stroke-width="0.8" stroke-opacity="0.15"/>
+  <path d="M 1120 158 Q 1145 290 1130 440" stroke="#84cc16" stroke-width="1" stroke-opacity="0.12"
+        fill="none" stroke-dasharray="4,4"/>
+
+  <!-- Small leaf 3 -->
+  <path d="M 870 350 Q 940 390 930 480 Q 910 530 860 520 Q 820 470 840 410 Q 850 370 870 350 Z"
+        fill="url(#leafgrad)" stroke="#14b8a6" stroke-width="0.6" stroke-opacity="0.2"/>
+
+  <!-- Sequence bar (amino acid letters, decorative) -->
+  <g font-family="'Courier New', monospace" font-size="13" fill="#22c55e" opacity="0.25">
+    <text x="820" y="565">M  K  L  S  S  T  V  A  F  L  F  L  L  A  G  F  A  Q  A  D  P</text>
+    <text x="820" y="583">S  P  K  S  T  C  G  H  D  E  S  G  L  P  G  R  K  C  K  K  I</text>
+    <text x="820" y="601">T  H  S  G  G  C  S  Y  S  Y  G  Y  C  G  K  G  A  K  C  Q  S</text>
+  </g>
+
+  <!-- Pipeline mini-diagram (right panel, subtle) -->
+  <!-- TAPE box -->
+  <rect x="810" y="90" width="80" height="36" rx="7" fill="#071a0e" stroke="#22c55e" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="850" y="114" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600"
+        fill="#86efac" text-anchor="middle">TAPE</text>
+
+  <!-- ESM box -->
+  <rect x="810" y="148" width="80" height="36" rx="7" fill="#071a0e" stroke="#84cc16" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="850" y="172" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600"
+        fill="#bef264" text-anchor="middle">ESM</text>
+
+  <!-- Arrow right from both to merge -->
+  <line x1="890" y1="108" x2="916" y2="130" stroke="#22c55e" stroke-width="1.2" stroke-opacity="0.5"/>
+  <line x1="890" y1="166" x2="916" y2="148" stroke="#84cc16" stroke-width="1.2" stroke-opacity="0.5"/>
+
+  <!-- GeoTop box -->
+  <rect x="918" y="120" width="90" height="36" rx="7" fill="#071a0e" stroke="#14b8a6" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="963" y="144" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600"
+        fill="#5eead4" text-anchor="middle">GeoTop</text>
+
+  <!-- Arrow → CNN -->
+  <line x1="1008" y1="138" x2="1035" y2="138" stroke="#14b8a6" stroke-width="1.2" stroke-opacity="0.5"/>
+
+  <!-- CNN box -->
+  <rect x="1037" y="120" width="80" height="36" rx="7" fill="#071a0e" stroke="#22c55e" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="1077" y="144" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600"
+        fill="#86efac" text-anchor="middle">LeNet CNN</text>
+
+  <!-- Arrow → output -->
+  <line x1="1117" y1="138" x2="1145" y2="138" stroke="#22c55e" stroke-width="1.2" stroke-opacity="0.5"/>
+
+  <!-- Output: SSP families -->
+  <text x="1150" y="126" font-family="'Segoe UI', sans-serif" font-size="11" fill="#86efac" opacity="0.8">CEP</text>
+  <text x="1150" y="140" font-family="'Segoe UI', sans-serif" font-size="11" fill="#bef264" opacity="0.8">RALF</text>
+  <text x="1150" y="154" font-family="'Segoe UI', sans-serif" font-size="11" fill="#5eead4" opacity="0.8">CRP</text>
+
+  <!-- Persistence diagram dots (decorative, bottom-right) -->
+  <g opacity="0.5">
+    <!-- PD dimension 0 -->
+    <circle cx="835" cy="480" r="4" fill="#22c55e"/>
+    <circle cx="855" cy="465" r="3" fill="#22c55e"/>
+    <circle cx="870" cy="492" r="4" fill="#22c55e"/>
+    <circle cx="892" cy="470" r="3" fill="#84cc16"/>
+    <circle cx="905" cy="488" r="4" fill="#22c55e"/>
+    <circle cx="920" cy="462" r="3" fill="#84cc16"/>
+    <!-- Birth-death diagonal -->
+    <line x1="820" y1="510" x2="940" y2="450" stroke="#22c55e" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.3"/>
+    <text x="880" y="530" font-family="'Segoe UI', sans-serif" font-size="11"
+          fill="#4ade80" text-anchor="middle" opacity="0.6">persistence diagram PD₀</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LEFT PANEL: text                                             -->
+  <!-- ============================================================ -->
+
+  <!-- Vertical accent bar -->
+  <rect x="62" y="88" width="5" height="190" rx="3" fill="url(#accent)"/>
+
+  <!-- Title line 1 -->
+  <text x="88" y="150" font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-size="68" font-weight="800" fill="white" letter-spacing="-1">S2-PEPANALYST</text>
+
+  <!-- Subtitle -->
+  <text x="90" y="193" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="19" fill="#86efac" letter-spacing="0.3">
+    Small Signalling Peptide Prediction in Plant Systems
+  </text>
+  <text x="90" y="217" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="16" fill="#6b7280">
+    TAPE · ESM · GeoTop TDA · LeNet CNN · Arabidopsis · Tomato · Avocado
+  </text>
+
+  <!-- Divider -->
+  <rect x="88" y="237" width="500" height="2" rx="1" fill="url(#accent)"/>
+
+  <!-- Stat boxes -->
+  <rect x="88" y="256" width="115" height="74" rx="10"
+        fill="#ffffff" fill-opacity="0.03" stroke="#22c55e" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="145" y="290" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">4</text>
+  <text x="145" y="316" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="12" fill="#6b7280" text-anchor="middle">species</text>
+
+  <rect x="216" y="256" width="115" height="74" rx="10"
+        fill="#ffffff" fill-opacity="0.03" stroke="#84cc16" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="273" y="290" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="26" font-weight="700" fill="#bef264" text-anchor="middle">2</text>
+  <text x="273" y="316" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="12" fill="#6b7280" text-anchor="middle">embeddings</text>
+
+  <rect x="344" y="256" width="115" height="74" rx="10"
+        fill="#ffffff" fill-opacity="0.03" stroke="#14b8a6" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="401" y="290" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="26" font-weight="700" fill="#2dd4bf" text-anchor="middle">TDA</text>
+  <text x="401" y="316" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="12" fill="#6b7280" text-anchor="middle">GeoTop / PH</text>
+
+  <rect x="472" y="256" width="130" height="74" rx="10"
+        fill="#ffffff" fill-opacity="0.03" stroke="#22c55e" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="537" y="286" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="18" font-weight="700" fill="#4ade80" text-anchor="middle">PBJ</text>
+  <text x="537" y="304" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="12" fill="#6b7280" text-anchor="middle">2026</text>
+  <text x="537" y="320" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="11" fill="#6b7280" text-anchor="middle">peer-reviewed</text>
+
+  <!-- Tag pills -->
+  <g font-family="'Segoe UI', system-ui, sans-serif" font-size="13">
+    <rect x="88" y="355" width="138" height="28" rx="14"
+          fill="#22c55e" fill-opacity="0.10" stroke="#22c55e" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="157" y="374" fill="#86efac" text-anchor="middle">🌿 Plant Biology</text>
+
+    <rect x="238" y="355" width="140" height="28" rx="14"
+          fill="#84cc16" fill-opacity="0.10" stroke="#84cc16" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="308" y="374" fill="#bef264" text-anchor="middle">🧬 Protein LM</text>
+
+    <rect x="390" y="355" width="130" height="28" rx="14"
+          fill="#14b8a6" fill-opacity="0.10" stroke="#14b8a6" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="455" y="374" fill="#5eead4" text-anchor="middle">🌀 Topology</text>
+
+    <rect x="532" y="355" width="120" height="28" rx="14"
+          fill="#22c55e" fill-opacity="0.10" stroke="#22c55e" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="592" y="374" fill="#86efac" text-anchor="middle">🧠 CNN</text>
+  </g>
+
+  <!-- Species list -->
+  <g font-family="'Segoe UI', system-ui, sans-serif" font-size="14">
+    <text x="88" y="420" fill="#4b5563">Validated on:</text>
+    <text x="88" y="442" fill="#86efac" font-style="italic">Arabidopsis thaliana</text>
+    <text x="264" y="442" fill="#4b5563">·</text>
+    <text x="278" y="442" fill="#bef264" font-style="italic">Solanum lycopersicum</text>
+    <text x="478" y="442" fill="#4b5563">·</text>
+    <text x="492" y="442" fill="#5eead4" font-style="italic">Persea americana</text>
+  </g>
+
+  <!-- Signal peptide motif (decorative text) -->
+  <g font-family="'Courier New', monospace" font-size="12" opacity="0.18">
+    <text x="88" y="488" fill="#22c55e">MKLSSW<tspan fill="#84cc16">LAVFGCL</tspan><tspan fill="#14b8a6">AVAHASSRP</tspan><tspan fill="#22c55e">GFPVCS...</tspan></text>
+    <rect x="88" y="468" width="58" height="16" rx="3" fill="none" stroke="#22c55e" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="92" y="480" font-family="'Segoe UI', sans-serif" font-size="9" fill="#4ade80" opacity="0.7">signal peptide</text>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="88" y="562" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="14" fill="#374151">
+    MorillaLab · Plant Biotechnology Journal, 2026 · Wiley · GPL-3.0
+  </text>
+  <text x="88" y="582" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="13" fill="#374151">
+    Vomo-Donfack · Abaach · Luna · Ginot · Doblas · Morilla
+  </text>
+</svg>
