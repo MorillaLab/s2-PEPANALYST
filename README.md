@@ -24,13 +24,14 @@
 
 Small signalling peptides (SSPs) are short secreted proteins that act as ligands in plant cell-to-cell communication, regulating development, immunity, and stress responses. Their computational identification remains challenging due to high sequence diversity, short length (≤ 200 aa), and the need to distinguish truly *functional* signalling domains from background sequence.
 
-**S2-PEPANALYST** tackles this by:
+**S<sup>2</sup>-PEPANALYST** tackles this by:
 
 1. **Embedding** protein sequences using TAPE (768-dim) and ESM (high-dim) protein language models
-2. **Converting** embeddings to 2D image representations (28×28 and 32×32) for spatial feature capture
-3. **Enriching** with **GeoTop** topological accuracy assessment via persistence diagrams
-4. **Classifying** with a CNN (LeNet architecture, improved from ProtConv) on the concatenated embedding images
-5. **Detecting functional domains** using Wasserstein distances between persistence diagrams — scale-invariant, analogous to BLAST but topology-aware
+2. **Optimisation** embedding best selection based on an agentic reinforcement learning model
+3. **Converting** embeddings to 2D image representations (28×28 and 32×32) for spatial feature capture
+4. **Enriching** with **GeoTop** topological accuracy assessment via persistence diagrams
+5. **Classifying** with a CNN (LeNet architecture, improved from ProtConv) on the concatenated embedding images
+6. **Detecting functional domains** using Wasserstein distances between persistence diagrams — scale-invariant, analogous to BLAST but topology-aware
 
 <p align="center">
   <img src="s2-pepanalyst images/Fig1_2.png" alt="S2-PEPANALYST workflow" width="820"/>
@@ -47,7 +48,7 @@ Protein Sequence (≤ 200 aa, N-terminal signal peptide)
           │
           ├────────────────────────┐
           ▼                        ▼
-   TAPE Embedding             ESM Embedding
+   TAPE Embedding             ESM Embedding  --> optimal by RL agent
    (768-dim)                  (high-dim)
           │                        │
           ▼                        ▼
