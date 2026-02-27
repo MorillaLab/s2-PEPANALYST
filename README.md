@@ -208,7 +208,7 @@ If you use S2-PEPANALYST in your research, please cite:
 
 ```bibtex
 @article{VomoDonfack2026s2pepanalyst,
-  title   = {S<sup>2</sup>-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides},
+  title   = {S2-PepAnalyst: A Web Tool for Predicting Plant Small Signalling Peptides},
   author  = {Vomo-Donfack, Kelly L. and Abaach, Mariem and Luna, Ana M. and
              Ginot, Grégory and Doblas, Verónica G. and Morilla, Ian},
   journal = {Plant Biotechnology Journal},
