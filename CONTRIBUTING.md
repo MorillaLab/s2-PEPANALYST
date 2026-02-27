@@ -1,6 +1,6 @@
-# Contributing to S2-PEPANALYST
+# Contributing to S<sup>2</sup>-PEPANALYST
 
-Thank you for your interest! Contributions that extend S2-PEPANALYST to new species, improve embeddings, or enhance the CNN are very welcome.
+Thank you for your interest! Contributions that extend S<sup>2</sup>-PEPANALYST to new species, improve embeddings, or enhance the CNN are very welcome.
 
 ## 🐛 Reporting Bugs
 
