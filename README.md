@@ -231,7 +231,6 @@ We welcome contributions — new species support, alternative embeddings, improv
 
 This project is licensed under the GNU General Public License v3.0 — see [`LICENSE`](LICENSE) for details.
 
-> **Note:** The License badge URL in the original README contained a typo (`Gchoosealicense.com`) — fixed here. The Colab badge was also pointing to the wrong repo — corrected.
 
 ---
 
