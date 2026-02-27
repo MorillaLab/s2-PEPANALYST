@@ -10,7 +10,7 @@
 [![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/MorillaLab/s2-PEPANALYST/graphs/commit-activity)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MorillaLab/s2-PEPANALYST/blob/main/code/)
 
-**S2-PEPANALYST** is a deep learning pipeline for predicting and functionally classifying small signalling peptides (SSPs) in plant genomes — combining protein language model embeddings (TAPE & ESM), topological data analysis (TDA), and a LeNet-inspired convolutional neural network.
+**S<sup>2</sup>-PEPANALYST** is a deep learning pipeline for predicting and functionally classifying small signalling peptides (SSPs) in plant genomes — combining protein language model embeddings (TAPE & ESM), topological data analysis (TDA), and a LeNet-inspired convolutional neural network.
 
 📄 Published in *Plant Biotechnology Journal* · 🌱 Validated on *Arabidopsis*, tomato, avocado · 🔬 Scale-invariant functional annotation
 
