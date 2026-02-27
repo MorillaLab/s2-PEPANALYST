@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌿 S2-PEPANALYST
+# 🌿 S<sup>2</sup>-PEPANALYST
 
 ### Small Signalling Peptide Analysis in Plant Systems
 
